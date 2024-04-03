@@ -1,11 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import { store } from './app/store'
-import { Provider } from 'react-redux'
-import { HelmetProvider } from 'react-helmet-async'
+import React from "react";
 import { hydrate, render } from "react-dom";
+import { HelmetProvider } from "react-helmet-async";
+import { Provider } from "react-redux";
+import App from "./App";
+import { store } from "./app/store";
+import "./index.css";
 
 // const rootElement = ReactDOM.createRoot(document.getElementById('root'));
 const rootElement = document.getElementById("root");
@@ -17,10 +16,8 @@ const APP = (
         <App />
       </HelmetProvider>
     </Provider>
-
   </React.StrictMode>
 );
-
 
 if (rootElement.hasChildNodes()) {
   hydrate(APP, rootElement);
@@ -38,5 +35,3 @@ if (rootElement.hasChildNodes()) {
 
 //   </React.StrictMode>
 // );
-
-

@@ -1,12 +1,10 @@
 .app__footer {
   padding-top: 150px;
 
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width: 1000px) {
     padding-top: 100px;
   }
 }
-
-
 
 .app__footer-cards {
   width: 100%;
@@ -15,15 +13,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
-
-
 
   .app__footer-card {
     min-width: 270px;
     display: flex;
     height: 50px;
-    
+
     // flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -35,7 +30,7 @@
     background-color: #393939;
     transition: all 0.3s ease-in-out;
 
-    a{
+    a {
       color: white;
     }
 
@@ -43,7 +38,7 @@
       // width: 40px;
       // height: 40px;
       margin: 0 0.7rem;
-      color:rgb(255, 225, 0);
+      color: rgb(255, 225, 0);
     }
 
     p {
@@ -58,8 +53,6 @@
     &:hover {
       box-shadow: 0 0 25px #fef4f5;
     }
-
-    
   }
 
   @media screen and (max-width: 768px) {
@@ -70,10 +63,6 @@
 .app__footer-cards .app__footer-card:last-child:hover {
   box-shadow: 0 0 25px #f2f7fb;
 }
-
-
-
-
 
 .contact-locations,
 .contact-timing {
@@ -87,9 +76,6 @@
 
   align-items: center;
 
-
-
-
   .contact-items {
     display: flex;
     justify-content: center;
@@ -100,40 +86,38 @@
     margin-left: 20px;
     margin-right: 20px;
 
-   .contact_items-item{
-    width: 400px;
-    @media screen and (max-width:768px) {
-      width: 320px;
-    }
-   }
-
-   @media screen and (max-width:768px) {
-    flex-direction: column;
-    gap: 10px;
-   }
-
-  }
-
- img{
-      width: 100%;
-      transition: transform .2s;
-
-      &:hover{
-        transform: scale(1.03);
+    .contact_items-item {
+      width: 400px;
+      @media screen and (max-width: 768px) {
+        width: 320px;
       }
     }
-}
 
-.contact-timing{
-  img{
-    width: 340px;
-    @media screen and (max-width:768px) {
-      width: 320px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
     }
-    
+  }
+
+  img {
+    width: 100%;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 
-a{
-  color:rgb(12, 31, 156);
+.contact-timing {
+  img {
+    width: 340px;
+    @media screen and (max-width: 768px) {
+      width: 320px;
+    }
+  }
+}
+
+a {
+  color: rgb(12, 31, 156);
 }

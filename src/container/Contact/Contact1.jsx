@@ -1,143 +1,107 @@
-import React, { useState, useEffect } from 'react';
-import { AiFillMail } from 'react-icons/ai'
-import { BsTelephoneOutbound } from 'react-icons/bs'
-import { GoLocation } from 'react-icons/go'
+import React, { useEffect } from "react";
+import { AiFillMail } from "react-icons/ai";
+import { BsTelephoneOutbound } from "react-icons/bs";
 
-
-import { MotionWrap } from '../../wrapper';
-import { client } from '../../client';
-import './Contact1.scss';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
+import { MotionWrap } from "../../wrapper";
+import "./Contact1.scss";
 
 const Contact1 = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  return (
+    <>
+      <Helmet>
+        <title>Contact - Career At Germany</title>
+      </Helmet>
+      <h2 className="head-text app__footer">
+        <span>Enquire Now</span>
+      </h2>
 
-    return (
-        <>
-            <Helmet>
+      <div className="app__footer-cards">
+        <div className="app__footer-card ">
+          <AiFillMail size={30} />
+          {/* <img src={images.email} alt="email" /> */}
+          <a href="mailto:careeratgermany@gmail.com">
+            careeratgermany@gmail.com
+          </a>
+        </div>
+        <div className="app__footer-card">
+          <BsTelephoneOutbound size={25} />
+          {/* <img src={images.mobile} alt="phone" /> */}
+          <a href="tel:+91 7994779575">+91 799 477 9575</a>
+        </div>
+      </div>
 
-                <title>Contact - Career At Germany</title>
+      <div className="contact-locations">
+        <h2 className="">Office Locations</h2>
 
-            </Helmet>
-            <h2 className="head-text app__footer"><span>Enquire Now</span></h2>
-
-            <div className="app__footer-cards">
-                <div className="app__footer-card ">
-                    <AiFillMail size={30} />
-                    {/* <img src={images.email} alt="email" /> */}
-                    <a href="mailto:careeratgermany@gmail.com" >careeratgermany@gmail.com</a>
-                </div>
-                <div className="app__footer-card">
-                    <BsTelephoneOutbound size={25} />
-                    {/* <img src={images.mobile} alt="phone" /> */}
-                    <a href="tel:+91 7994779575" >+91 799 477 9575</a>
-                </div>
+        <div className="contact-items">
+          <div className="contact_items-item">
+            <div>
+              <img src="location1.jpg" alt="" />
             </div>
+            <h4>Kothamangalam Bypass</h4>
+            <a href="https://goo.gl/maps/ZUFmoxhQyhVC8wEH8" target="_blank">
+              <p>
+                KK Arcade, Kothamangalam Bypass Junction, near KCV Channel,
+                Kothamangalam, Kerala, 686691.
+              </p>
+            </a>
+          </div>
 
-
-            
-
-            <div className='contact-locations'>
-
-                <h2 className=''>Office Locations</h2>
-
-                <div className='contact-items'>
-
-                    <div className='contact_items-item'>
-
-
-                        <div>
-
-                            <img src="location1.jpg" alt="" />
-                        </div>
-                        <h4>
-                            Kothamangalam Bypass
-                        </h4>
-                            <a href="https://goo.gl/maps/ZUFmoxhQyhVC8wEH8" target='_blank'>
-                        <p>
-                                KK Arcade, Kothamangalam Bypass Junction, near KCV Channel, Kothamangalam, Kerala, 686691.
-                        </p>
-                            </a>
-
-                    </div>
-
-                    <div className='contact_items-item'>
-
-
-                        <div>
-                            <img src="location2.jpg" alt="" />
-
-                        </div>
-                            <h4>
-                                Kothamangalam Town
-                            </h4>
-                        <a href="https://maps.app.goo.gl/rGrKr2fdbCkqycwB6" target='_blank'>
-                            <p> Mathson Chambers, NH85, Kochi-Dhanushkodi Road, near Aann's Ladies Hostel, Kothamangalam, Kerala, 686691</p>
-                        </a>
-                    </div>
-
-                    <div className='contact_items-item'>
-
-                        <div>
-                            <img src="location3.jpg" alt="" />
-
-                        </div>
-                            <h4>
-                                Perumbavoor
-                            </h4>
-                        <a href="https://maps.app.goo.gl/W3M5KJNVjUJvxau8A" target='_blank'>
-                            <p>Jaya Hardwares Building, Opposite Elavumkudy Jewellers, AM Road, Perumbavoor, Kerala, 683542.</p>
-                        </a>
-                    </div>
-
-                </div>
+          <div className="contact_items-item">
+            <div>
+              <img src="location2.jpg" alt="" />
             </div>
+            <h4>Kothamangalam Town</h4>
+            <a href="https://maps.app.goo.gl/rGrKr2fdbCkqycwB6" target="_blank">
+              <p>
+                {" "}
+                Mathson Chambers, NH85, Kochi-Dhanushkodi Road, near Aann's
+                Ladies Hostel, Kothamangalam, Kerala, 686691
+              </p>
+            </a>
+          </div>
 
-
-            <div className='contact-timing'>
-                <h2 className=''>Working Hours</h2>
-                <img src="worktime.jpg" alt="" />
-                <div className='contact-items'>
-
-                    <div>
-                        <h4 >
-                            Monday - Friday
-                        </h4>
-                        <p>
-                            09:00 am - 07:00 pm
-                        </p>
-
-                    </div>
-                    <div>
-                        <h4>
-                            Saturday
-                        </h4>
-                        <p>
-                            09:00 am - 12:00 pm
-                        </p>
-                    </div>
-                    <div>
-                        <h4>
-                            Sunday
-                        </h4>
-                        <p>
-                            Closed
-                        </p>
-                    </div>
-                </div>
-
-
-
-
+          <div className="contact_items-item">
+            <div>
+              <img src="location3.jpg" alt="" />
             </div>
+            <h4>Perumbavoor</h4>
+            <a href="https://maps.app.goo.gl/W3M5KJNVjUJvxau8A" target="_blank">
+              <p>
+                Jaya Hardwares Building, Opposite Elavumkudy Jewellers, AM Road,
+                Perumbavoor, Kerala, 683542.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
 
-        </>
-    );
+      <div className="contact-timing">
+        <h2 className="">Working Hours</h2>
+        <img src="worktime.jpg" alt="" />
+        <div className="contact-items">
+          <div>
+            <h4>Monday - Friday</h4>
+            <p>09:00 am - 07:00 pm</p>
+          </div>
+          <div>
+            <h4>Saturday</h4>
+            <p>09:00 am - 12:00 pm</p>
+          </div>
+          <div>
+            <h4>Sunday</h4>
+            <p>Closed</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
-
 
 // export default Contact
 export default MotionWrap(Contact1);

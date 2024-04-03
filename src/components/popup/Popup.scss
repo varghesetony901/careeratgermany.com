@@ -1,83 +1,79 @@
 .popup__container {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 100%;
-    z-index: 11;
-    display: block;
-    animation: popupDelay 1s ease-in-out;
-
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 100%;
+  z-index: 11;
+  display: block;
+  animation: popupDelay 1s ease-in-out;
 }
 
-
-@keyframes popupDelay{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+@keyframes popupDelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .popup {
-    background-color: #ffffff;
-    width: 520px;
-    height: 520px;
+  background-color: #ffffff;
+  width: 520px;
+  height: 520px;
 
-    // padding: 30px 40px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    border-radius: 8px;
-    font-family: "Poppins", sans-serif;
+  // padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
 
-    text-align: center;
-    z-index: 20;
+  text-align: center;
+  z-index: 20;
 
-
-
-    @media screen and (min-width:1000px) {
-        width: 720px;
-        height: 680px;
-    }
-    @media screen and (max-width:600px) {
-        width: 320px;
-        height: 350px;
-    }
+  @media screen and (min-width: 1000px) {
+    width: 720px;
+    height: 680px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 320px;
+    height: 350px;
+  }
 }
 
 .popup button {
-    display: block;
-    margin: 5px 10px 0px auto;
-    background-color: transparent;
-    font-size: 30px;
-    color: #4c4c4c;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  display: block;
+  margin: 5px 10px 0px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #4c4c4c;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .popup p {
-    font-size: 14px;
-    text-align: justify;
-    margin: auto;
-    line-height: 25px;
+  font-size: 14px;
+  text-align: justify;
+  margin: auto;
+  line-height: 25px;
 }
 
 .popup a {
-    display: flex;
-    width: 150px;
-    position: relative;
-    margin: auto;
-    text-align: center;
-    background-color: #0f72e5;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px 0;
-    border-radius: 5px;
+  display: flex;
+  width: 150px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: #0f72e5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 0;
+  border-radius: 5px;
 }
 
 .popup img {
-    width: 95%;
+  width: 95%;
 }

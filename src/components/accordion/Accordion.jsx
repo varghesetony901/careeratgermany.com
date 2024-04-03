@@ -1,7 +1,6 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { client } from '../../client'
 import './Accordion.scss'
-import { client, urlFor } from '../../client'
 
 
 const Accordion = () => {

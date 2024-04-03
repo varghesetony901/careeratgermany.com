@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './Timer.scss'
+import React, { useEffect, useState } from 'react';
+import './Timer.scss';
 
 const CountdownTimer = ({ targetDate }) => {
     const calculateTimeLeft = (target) => {

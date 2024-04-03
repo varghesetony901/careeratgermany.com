@@ -1,11 +1,11 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   value: true,
-}
+};
 
 export const PopupShow = createSlice({
-  name: 'PopupShower',
+  name: "PopupShower",
   initialState,
   reducers: {
     onUpdate: (state) => {
@@ -13,13 +13,12 @@ export const PopupShow = createSlice({
       // doesn't actually mutate the state because it uses the Immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
-      state.value = !state.value
+      state.value = !state.value;
     },
-    
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const {onUpdate} = PopupShow.actions
+export const { onUpdate } = PopupShow.actions;
 
-export default PopupShow.reducer
+export default PopupShow.reducer;

@@ -1,9 +1,9 @@
 import React from 'react'
 import './Achivements.scss'
 
-import {GiProgression} from 'react-icons/gi'
-import {VscServerProcess} from 'react-icons/vsc'
-import {HiOutlineSupport} from 'react-icons/hi'
+import { GiProgression } from 'react-icons/gi'
+import { HiOutlineSupport } from 'react-icons/hi'
+import { VscServerProcess } from 'react-icons/vsc'
 
 const Achivements = () => {
     return (

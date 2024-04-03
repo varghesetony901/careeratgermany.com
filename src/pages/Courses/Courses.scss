@@ -1,4 +1,4 @@
-h3{
+h3 {
   font-size: 15px;
 }
 
@@ -10,10 +10,9 @@ h3{
 
 .courses_header {
   padding-top: 150px;
-
 }
 
-.courses_descript{
+.courses_descript {
   margin-top: 150px;
   // margin-bottom: 100px;
   text-align: center;
@@ -55,7 +54,7 @@ h3{
     color: #fff;
   }
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width: 600px) {
     flex-direction: column;
   }
 }
@@ -104,9 +103,8 @@ h3{
       font-size: medium;
       color: #fff;
       cursor: pointer;
-      transition: ease-in-out .3s;
+      transition: ease-in-out 0.3s;
       box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
-
 
       &:hover {
         scale: 1.03;
@@ -191,7 +189,6 @@ h3{
       margin-top: 3rem;
     }
   }
-
 
   .work__details__info-left {
     display: flex;

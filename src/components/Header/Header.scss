@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
 
-
   padding: 1rem 2rem;
   background: rgba(255, 225, 0, 1);
   position: fixed;
@@ -14,11 +13,10 @@
 
   @media screen and (max-width: 1000px) {
     // top: 0px;
-}
+  }
 }
 
 .app__navbar-logo {
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -26,7 +24,6 @@
   border-radius: 10px;
 
   img {
-
     width: 260px;
     height: 50px;
 
@@ -38,22 +35,16 @@
 }
 
 .app__navbar-links {
-  flex-grow:1;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 
-
-
   @media screen and (max-width: 1000px) {
     display: none;
-    
   }
 }
-
-
-
 
 .app__navbar-menu {
   width: 35px;
@@ -61,16 +52,12 @@
   border-radius: 50%;
   position: relative;
 
-
-
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(178, 0, 0);
 
-
   svg {
-    
     width: 70%;
     height: 70%;
     color: var(--white-color);
@@ -142,18 +129,12 @@
   //   }
   // }
 
-
-  
-
   @media screen and (min-width: 1000px) {
     display: none;
   }
 }
 
-
 .app_navbar-menu-container {
-
-
   position: fixed;
   top: 40px;
   bottom: 0;
@@ -172,7 +153,7 @@
   // align-items:center;
   // flex-direction: column;
 
-  background: url('../../assets/bgWhite.png');
+  background: url("../../assets/bgWhite.png");
   background-color: var(--white-color);
   background-size: cover;
   background-repeat: repeat;
@@ -185,17 +166,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  
 
     svg {
-
-      width: 35px; 
+      width: 35px;
       height: 35px;
       color: rgb(178, 0, 0);
       margin: 0rem 1rem;
     }
-
-
   }
-
 }

@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import "./Header2.scss";
-import { AppWrap } from "../../wrapper";
+import React, { useEffect, useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-import { urlFor, client } from "../../client";
+import { client, urlFor } from "../../client";
+import { AppWrap } from "../../wrapper";
+import "./Header2.scss";
 
-import { images } from "../../constants";
 import CountdownTimer from "../../components/clock/CountdownTimer";
 
 const Header2 = () => {
