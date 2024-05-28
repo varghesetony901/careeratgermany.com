@@ -86,13 +86,13 @@ const Contact1 = () => {
         <img src="worktime.jpg" alt="" />
         <div className="contact-items">
           <div>
-            <h4>Monday - Friday</h4>
-            <p>09:00 am - 07:00 pm</p>
+            <h4>Monday - Saturday</h4>
+            <p>09:00 am - 05:00 pm</p>
           </div>
-          <div>
+          {/* <div>
             <h4>Saturday</h4>
             <p>09:00 am - 12:00 pm</p>
-          </div>
+          </div> */}
           <div>
             <h4>Sunday</h4>
             <p>Closed</p>
