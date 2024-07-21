@@ -39,8 +39,8 @@ const FootBar = () => {
 
             <div className="footbar__info">
               <AiOutlineMail size={20} />
-              <a href="mailto:careeratgermany@gmail.com">
-                <p>careeratgermany@gmail.com</p>
+              <a href="mailto:info@careeratgermany.com">
+                <p>info@careeratgermany.com</p>
               </a>
             </div>
           </div>

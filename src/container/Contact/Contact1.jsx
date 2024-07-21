@@ -24,8 +24,8 @@ const Contact1 = () => {
         <div className="app__footer-card ">
           <AiFillMail size={30} />
           {/* <img src={images.email} alt="email" /> */}
-          <a href="mailto:careeratgermany@gmail.com">
-            careeratgermany@gmail.com
+          <a href="mailto:info@careeratgermany.com">
+          info@careeratgermany.com
           </a>
         </div>
         <div className="app__footer-card">
