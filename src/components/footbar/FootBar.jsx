@@ -15,7 +15,7 @@ const FootBar = () => {
       <div className="footbar_container_with_social">
         <div className="footbar__main">
           <div className="footbar__one">
-            <h4>Our Office</h4>
+            <h4>Our Head Office</h4>
             <div className="footbar__info">
               <div>
                 <GoLocation size={20} />
@@ -67,10 +67,10 @@ const FootBar = () => {
 
           <div className="footbar__three">
             <h4>Working Hours</h4>
-            <p>Monday - Friday</p>
-            <h6>09:00 am - 07:00 pm</h6>
-            <p>Saturday</p>
-            <h6>09:00 am - 12:00 pm</h6>
+            <p>Monday - Saturday</p>
+            <h6>09:00 am - 05:00 pm</h6>
+            {/* <p>Saturday</p>
+            <h6>09:00 am - 12:00 pm</h6> */}
             <p>Sunday</p>
             <h6>Closed</h6>
           </div>

@@ -13,7 +13,7 @@ const Copyright = () => {
         </div>
       </div>
       <div className="copyright_text">
-        <p>© 2023 Career@Germany | All rights reserved.</p>
+        <p>© 2024 Career@Germany | All rights reserved.</p>
       </div>
     </div>
   );

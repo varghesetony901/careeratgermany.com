@@ -44,7 +44,7 @@ const WhatsappComponent = () => {
 
               <p>Hi there 👋</p>
 
-              <p>How We can Help You?</p>
+              <p>How we can help you?</p>
             </div>
           </div>
           <div className="model_bottom_input_box">

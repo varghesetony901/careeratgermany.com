@@ -78,6 +78,44 @@ const Contact1 = () => {
               </p>
             </a>
           </div>
+
+          <div className="contact_items-item">
+            <div>
+              <img src="location1.jpg" alt="" />
+            </div>
+            <h4>Kothamangalam City Tower </h4>
+            <a href="https://maps.app.goo.gl/ctbSqhsPYvrkNZgE8" target="_blank">
+              <p>
+              Second floor, City Tower, near Police Station, Angady, Kothamangalam, Kerala
+              686691.
+              </p>
+            </a>
+          </div>
+
+          <div className="contact_items-item">
+            <div>
+              <img src="location2.jpg" alt="" />
+            </div>
+            <h4>Ernakulam</h4>
+            <a href="https://maps.app.goo.gl/WScMb5kWuyXutW3G9" target="_blank">
+              <p>
+              2nd Floor, KC Arcade, Thuthiyoor Rd, near Heiley Spaces Pvt Ltd, CSEZ, Kakkanad,
+              Kerala 682037.
+              </p>
+            </a>
+          </div>
+
+          <div className="contact_items-item">
+            <div>
+              <img src="location3.jpg" alt="" />
+            </div>
+            <h4>Germany</h4>
+            <a href="https://www.careeratgermany.de/en" target="_blank">
+              <p>
+              Blumenstrasse 8, 88444, Ummendorf, Germany.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
 
