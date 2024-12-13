@@ -72,7 +72,7 @@ const Header2 = () => {
                 delaySpeed={1000}
               />
             </h2>
-            <Link to="/contact">
+            <Link to="https://applicant.careerpflege.com/" target="_">
               <div className="h4btn">
                 <h4>Register Now</h4>
 
@@ -92,7 +92,7 @@ const Header2 = () => {
         </div>
 
         <div className="header__lower">
-          <Link to="/master-courses">
+          <Link to="https://applicant.careerpflege.com/" target="_">
             <div className="header__lower-left">
               <motion.div
                 whileInView={{ opacity: 1 }}
@@ -146,10 +146,12 @@ const Header2 = () => {
 
           {/* <button className='master__course__enroll-btn'>Enroll Now</button> */}
 
-          <a
+          {/* <a
             href={`https://wa.me/+917994779575?text=I would like to enroll for FSJ / Ausbildung. Expecting an early reply. Thank you!`}
             target="_blank"
-          >
+          > */}
+
+          <Link to="https://applicant.careerpflege.com/" target="_">
             <div className="header__lower-right">
               <motion.div
                 whileInView={{ opacity: 1 }}
@@ -170,7 +172,7 @@ const Header2 = () => {
                 </div>
               </motion.div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
