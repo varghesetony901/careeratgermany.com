@@ -1,0 +1,7 @@
+.null_container {
+  padding-top: 50px;
+
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+}

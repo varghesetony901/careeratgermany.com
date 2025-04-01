@@ -1,0 +1,26 @@
+.fileUploadDocs {
+  // width: 300px;
+
+  cursor: pointer;
+  margin-top: 50px;
+  // margin-left: 110px;
+  margin-bottom: 50px;
+  color: var(--secondary-color);
+
+  a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+  }
+  :hover {
+    color: rgb(6, 60, 160);
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 40px 30px;
+    h2 {
+      font-size: large;
+    }
+  }
+}

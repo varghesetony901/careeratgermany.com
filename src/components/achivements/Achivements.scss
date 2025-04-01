@@ -1,0 +1,43 @@
+.achivements__header {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.achivements__blocks {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  // width: 500px;
+
+  .blocks__item {
+    gap: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+
+    .blocks-icon {
+      color: var(--primary-color);
+    }
+
+    .blocks-content {
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 30px;
+
+      p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

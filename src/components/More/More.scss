@@ -1,0 +1,13 @@
+.more_container {
+  position: relative;
+}
+.more_show {
+  display: block;
+  position: absolute;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.more_hide {
+  display: none;
+}

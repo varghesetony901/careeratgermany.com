@@ -1,0 +1,15 @@
+.hero_comp-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding-top: 150px;
+  background-color: #fff;
+  h1 {
+    font-size: 100px;
+    margin: auto 0;
+    text-align: center;
+  }
+}

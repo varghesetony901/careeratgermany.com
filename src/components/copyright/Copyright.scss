@@ -1,0 +1,50 @@
+.copyright_container {
+  background-color: black;
+}
+
+.circle_bg_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-bottom: 100px;
+  position: relative;
+  cursor: pointer;
+
+  animation: crescendo 1.5s alternate infinite ease-in;
+}
+
+@keyframes crescendo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.circle_bg_top {
+  position: absolute;
+  // bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(6, 60, 160);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px rgb(255, 255, 255) solid;
+}
+
+.copyright_text {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+
+  p {
+    color: #ffffff;
+
+    @media screen and (max-width: 600px) {
+      font-size: small;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.grade_calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+
+  .grade_calc_contents {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+    width: 600px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+      align-items: flex-start;
+      width: 350px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(6, 60, 160);
+    @media screen and (max-width: 768px) {
+      font-size: large;
+    }
+  }
+
+  .calc-input_fields {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+
+    input {
+      height: 40px;
+      padding: 10px;
+      border: none;
+      border-radius: 7px;
+      background-color: rgb(233, 233, 233);
+
+      &:hover {
+        box-shadow: 0 0 5px var(--gray-color);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .grade_btn {
+    width: 120px;
+    min-height: 50px;
+    margin: 10px 10px;
+
+    border: none;
+    padding: 10px;
+    background-color: rgb(6, 60, 160);
+    color: white;
+    border-radius: 10px;
+    transition: ease 0.2s;
+
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.04;
+
+      background-color: #000000;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 20px;
+  }
+}
