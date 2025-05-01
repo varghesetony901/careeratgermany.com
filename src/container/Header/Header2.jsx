@@ -173,6 +173,28 @@ const Header2 = () => {
               </motion.div>
             </div>
           </Link>
+
+          <Link to="https://www.germancvmaker.com/" target="_">
+            <div className="header__lower-right">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.5, type: "tween" }}
+                className="header__lower__left-fsj"
+              >
+                <h2>Create German CV</h2>
+                <p>
+                  Your resume is your first impression—make it count with our
+                  cutting-edge pre-powered resume builder.
+                </p>
+
+                <div className="h4btn">
+                  <h4>Apply Now</h4>
+                  <FiExternalLink size={25} />
+                </div>
+              </motion.div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
